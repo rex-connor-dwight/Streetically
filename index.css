@@ -19,12 +19,16 @@
 
 :root{
     --abBlack: #040606;
+    --abblackSub: #020202;
     --darkgreen: #040606;
     --gray1: #83898a;
     --gold1: #f4c107;
     --gold2: #c65204;
     --AD:#ffffff;
     --ctaBNT: #1d2424;
+    --gray2: #0c1010;
+    --gray3: #878b8b;
+    --gray4: #555b5e;
     --gradient: linear-gradient(90deg, var(--gold1), var(--gold2));
 }
 
@@ -88,7 +92,9 @@ header ul :hover{
 }
 
 .Home{
-
+    background: url(images/bg2.png) no-repeat; 
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -111,6 +117,7 @@ header ul :hover{
     padding-right: 55vw;
     font-family: 'Arcon', sans-serif;
     color: var(--gray1);
+    transition: text 1s ease;
 }
 
 .homeCTA{
@@ -143,6 +150,127 @@ header ul :hover{
     height: auto;
     padding-right: 1vw;
 }
+
+
+
+.About{
+    padding: 5rem 5%;
+    color: var(--gray3);
+    border-radius: .4rem;
+}
+
+.aboutCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--abBlack);
+    border-radius: .4rem;
+}
+
+.aboutCard{
+    width: 30%;
+    background: url(images/street.png) no-repeat; 
+    background-position: center;
+    background-size: cover;
+    transition: background-image 1s ease;
+    height: 70vh;
+    border-radius: .4rem;
+    padding: 0 4vw;
+}
+
+.aboutCardCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    padding-top: 55vh;
+    width: 100%;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socials a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gray2);
+    margin: 0 .7vw;
+    padding: .7vw;
+    border-radius: 5rem;
+    border: var(--gray4) solid .07rem;
+    cursor: pointer;
+}
+
+.socials img{
+    max-width: .7vw;
+    height: auto;
+}
+
+.streetName {
+    margin-top: .8rem;
+}
+
+.streetName h2{
+    padding: .7vw 3vw;
+    border-radius: .2rem;
+    border: var(--gray4) solid .07rem;
+    font-size: .8vw;
+    font-weight: 600;
+    font-family: 'Arcon', sans-serif;
+}
+
+.aboutText{
+    width: 70%;
+    padding: 0vh 10vh 0 4vw;
+}
+
+.aboutText h2{
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: "AvenirRoman";
+}
+
+.aboutText h1{
+    font-size: 3.5vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+    margin-top: 3vh;
+    color: var(--AD);
+}
+
+.aboutText p{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+    margin-top: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -270,5 +398,105 @@ header ul :hover{
         max-width: 3.4vw;
         height: auto;
         padding-right: 2.5vw;
+    }
+
+
+    .About{
+        padding: 1.5rem 5%;
+        color: var(--gray3);
+        border-radius: .4rem;
+    }
+
+    .aboutCon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--abblackSub);
+        border-radius: .4rem;
+    }
+
+    .aboutCard{
+        width: 30%;
+        background: url(images/streetMobile.png) no-repeat; 
+        background-position: center;
+        background-size: cover;
+        transition: background-image 1s ease;
+        height: 70vh;
+        border-radius: .4rem;
+        padding: 0 4vw;
+        width: 90%;
+    }
+
+    .aboutCardCon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 0;
+        padding-top: 45vh;
+        
+    }
+
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .socials a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--gray2);
+        margin: 0 1.7vw;
+        padding: 2.8vw;
+        border-radius: 5rem;
+        border: var(--gray4) solid .07rem;
+        cursor: pointer;
+    }
+
+    .socials img{
+        max-width: 1.8vw;
+        height: auto;
+    }
+
+    .streetName {
+        margin-top: .8rem;
+    }
+
+    .streetName h2{
+        padding: 2.3vw 10vw;
+        border-radius: .2rem;
+        border: var(--gray4) solid .07rem;
+        font-size: 2vw;
+        font-weight: 600;
+        font-family: 'Arcon', sans-serif;
+    }
+
+    .aboutText{
+        width: 90%;
+        padding: 0vh 0vh 5vh 3vw;
+    }
+
+    .aboutText h2{
+        font-size: 3vw;
+        font-weight: 600;
+        font-family: "AvenirRoman";
+    }
+
+    .aboutText h1{
+        font-size: 6vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+        margin-top: 3vh;
+        color: var(--AD);
+    }
+
+    .aboutText p{
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+        margin-top: 3vh;
     }
 }
