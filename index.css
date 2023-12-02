@@ -143,3 +143,132 @@ header ul :hover{
     height: auto;
     padding-right: 1vw;
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.6rem 7%;
+        background: var(--darkgreen);
+        backdrop-filter: blur(100px);
+        color: var(--darkgreen);
+        position: fixed;
+        opacity: 70%;
+    }
+    
+    
+    
+    #navBar{
+        display: inline;
+        align-items: center;
+        background: var(--ctaBNT);
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    #navBar img{
+        max-width: 5vw;
+        height: auto;
+    }
+    
+    header img{
+        max-width: 12%;
+        height: auto;
+    }
+    
+    header ul{
+        list-style-type: none;
+        display: none;
+    }
+    
+    header li{
+        color: var(--AD);
+        padding-left: 2rem;
+        font-size: 1vw;
+        font-weight: 500;
+        font-family: "AvenirRoman";
+    }
+    
+    header ul :hover{
+        color: var(--gold2);
+    }
+    
+    .Home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0 5%;
+        color: var(--AD);
+        background: url(images/mbg1.png) no-repeat; 
+        background-position: center;
+        background-size: cover;
+        transition: background-image 1s ease;
+    }
+
+    .homeCon{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5vh;
+    }
+    
+    .Home img{
+        max-width: 65vw;
+        height: auto;
+    }
+    
+    .Home p{
+        margin: 2rem 0;
+        text-align: center;
+        font-size: 2.5vw;
+        font-weight: 400;
+        padding-right: 0vw;
+        padding: 0 2rem;
+        font-family: 'Arcon', sans-serif;
+        color: var(--gray1);
+    }
+    
+    .homeCTA{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .homeCTA h3{
+        font-size: 3vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+    }
+    
+    .book{
+        background: var(--ctaBNT);
+        padding: 2vw 6vw;
+        border-radius: 5rem;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .homeVideo{
+        display: flex;
+        align-items: center;
+        margin-left: 6vw;
+        cursor: pointer;
+    }
+    
+    .homeVideo img{
+        max-width: 3.4vw;
+        height: auto;
+        padding-right: 2.5vw;
+    }
+}
