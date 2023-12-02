@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,900;1,100;1,200;1,300;1,500;1,900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/arcon');
+
+                
+
+@font-face {
+    font-family: "AvenirBlack";
+    src: url(Fonts/AvenirLBlack.otf);
+}
+@font-face {
+    font-family: "AvenirBook";
+    src: url(Fonts/AvenirLBook.otf);
+}
+@font-face {
+    font-family: "AvenirRoman";
+    src: url(Fonts//AvenirLRoman.otf);
+}
+
+:root{
+    --abBlack: #040606;
+    --darkgreen: #040606;
+    --gray1: #83898a;
+    --gold1: #f4c107;
+    --gold2: #c65204;
+    --AD:#ffffff;
+    --ctaBNT: #1d2424;
+    --gradient: linear-gradient(90deg, var(--gold1), var(--gold2));
+}
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: var(--Book);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 5%;
+    background: var(--darkgreen);
+    backdrop-filter: blur(100px);
+    color: var(--darkgreen);
+    position: fixed;
+    opacity: 70%;
+}
+
+
+
+#navBar{
+    display: none;
+}
+
+header img{
+    max-width: 7%;
+    height: auto;
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header li{
+    color: var(--AD);
+    padding-left: 2rem;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: "AvenirRoman";
+}
+
+header ul :hover{
+    color: var(--gold2);
+}
+
+.Home{
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0 5%;
+    color: var(--AD);
+    transition: background-image 1s ease;
+}
+
+.Home img{
+    max-width: 35vw;
+    height: auto;
+}
+
+.Home p{
+    margin: 2rem 0;
+    font-size: .85vw;
+    font-weight: 400;
+    padding-right: 55vw;
+    font-family: 'Arcon', sans-serif;
+    color: var(--gray1);
+}
+
+.homeCTA{
+    display: flex;
+    align-items: center;
+}
+
+.homeCTA h3{
+    font-size: 1.1vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+}
+
+.book{
+    background: var(--ctaBNT);
+    padding: 1vw 4vw;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.homeVideo{
+    display: flex;
+    align-items: center;
+    margin-left: 6vw;
+    cursor: pointer;
+}
+
+.homeVideo img{
+    max-width: 1.1vw;
+    height: auto;
+    padding-right: 1vw;
+}
