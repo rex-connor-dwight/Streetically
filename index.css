@@ -232,6 +232,7 @@ header ul :hover{
     border-radius: .2rem;
     border: var(--gray4) solid .07rem;
     font-size: .8vw;
+    background: var(--gray2);
     font-weight: 600;
     font-family: 'Arcon', sans-serif;
 }
@@ -633,6 +634,7 @@ header ul :hover{
         padding: 2.3vw 10vw;
         border-radius: .2rem;
         border: var(--gray4) solid .07rem;
+        background: var(--gray2);
         font-size: 2vw;
         font-weight: 600;
         font-family: 'Arcon', sans-serif;
