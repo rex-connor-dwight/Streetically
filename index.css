@@ -17,6 +17,17 @@
     src: url(Fonts//AvenirLRoman.otf);
 }
 
+@font-face {
+    font-family: "AvenirLight";
+    src: url(Fonts//AvenirLight.ttf);
+}
+
+@font-face {
+    font-family: "AvenirHeavy";
+    src: url(Fonts//Avenir\ Heavy.ttf);
+}
+
+
 :root{
     --abBlack: #040606;
     --abblackSub: #020202;
@@ -29,6 +40,7 @@
     --gray2: #0c1010;
     --gray3: #878b8b;
     --gray4: #555b5e;
+    --bookForm: #132020;
     --gradient: linear-gradient(90deg, var(--gold1), var(--gold2));
 }
 
@@ -184,7 +196,7 @@ header ul :hover{
     align-items: center;
     position: relative;
     bottom: 0;
-    padding-top: 55vh;
+    padding-top: 46vh;
     width: 100%;
 }
 
@@ -249,6 +261,158 @@ header ul :hover{
     font-family: 'Arcon', sans-serif;
     margin-top: 3vh;
 }
+
+
+.Book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/bookBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--gray3);
+    padding: 6%;
+}
+
+.bookText{
+    width: 65%;
+}
+
+.bookText h2{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    color: var(--gold2);
+    margin-bottom: 1rem;
+}
+
+.bookText h1{
+    font-size: 3.3vw;
+    font-weight: 300;
+    font-family: "AvenirLight";
+    color: var(--AD);
+    margin-bottom: 1rem;
+    line-height: 9vh;
+}
+
+.bookText h1 span{
+    font-size: 3.5vw;
+    font-weight: 900;
+    font-family: "AvenirHeavy";
+    color: var(--AD);
+}
+
+.bookText p{
+    font-size: 1.1vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+    margin-bottom: 1rem;
+    padding-right: 13vw;
+}
+
+.bookAction{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.bookAction h3{
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+}
+
+.bookAction a{
+    margin-left: 5vw;
+    background: var(--bookForm);
+    padding: 2vh 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+    border-radius: .3rem;
+    color: var(--gold2);
+}
+
+
+.bookForm{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bookForm);
+    opacity: 90%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    padding: 2rem;
+}
+
+.bookForm form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookForm input{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 2vh 2vw;
+    border: var(--gray4) .085rem solid;
+    background: var(--bookForm);
+    border-radius: .2rem;
+    color: var(--gray3);
+}
+
+.bookForm ::placeholder{
+    font-size: .7vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+    font-style: italic;
+}
+
+.igAndPhone{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    width: 114%;
+}
+
+.igAndPhone input{
+    width: 50%;
+}
+
+.dateAndVenue{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 114%;
+}
+
+.davInput{
+    margin-right: .5rem;
+}
+
+.davInputAlt{
+    margin-left: .5rem;
+}
+
+
+.bookForm  button{
+    width: 114%;
+    padding: .8rem 0;
+    border: 0;
+    background: var(--gradient);
+    color: var(--abBlack);
+    border-radius: .2rem;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+
+
+
 
 
 
@@ -499,4 +663,154 @@ header ul :hover{
         font-family: 'Arcon', sans-serif;
         margin-top: 3vh;
     }
+
+    .Book{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(images/bookBg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: var(--gray3);
+        padding: 6%;
+    }
+    
+    .bookText{
+        width: 100%;
+    }
+    
+    .bookText h2{
+        font-size: 5vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        color: var(--gold2);
+        margin: 4vh 0 2.5vh 0
+    }
+    
+    .bookText h1{
+        font-size: 6vw;
+        font-weight: 300;
+        font-family: "AvenirLight";
+        color: var(--AD);
+        margin-bottom: 1rem;
+        line-height: 5vh;
+    }
+    
+    .bookText h1 span{
+        font-size: 5.3vw;
+        font-weight: 900;
+        font-family: "AvenirHeavy";
+        color: var(--AD);
+    }
+    
+    .bookText p{
+        font-size: 2.8vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+        margin-bottom: 1rem;
+        padding-right: 3vw;
+    }
+    
+    .bookAction{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    .bookAction h3{
+        font-size: 3.2vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+    }
+    
+    .bookAction a{
+        margin-left: 5vw;
+        background: var(--bookForm);
+        padding: 2vh 5vw;
+        font-size: 3.2vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+        border-radius: .3rem;
+        color: var(--gold2);
+    }
+    
+    
+    .bookForm{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--bookForm);
+        opacity: 90%;
+        backface-visibility: hidden;
+        border-radius: .3rem;
+        padding: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .bookForm form{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bookForm input{
+        width: 114%;
+        margin-bottom: 1.5rem;
+        padding: 2vh 2vw;
+        border: var(--gray4) .085rem solid;
+        background: var(--bookForm);
+        border-radius: .2rem;
+        color: var(--gray3);
+    }
+    
+    .bookForm ::placeholder{
+        font-size: 2.3vw;
+        font-weight: 400;
+        font-family: 'Arcon', sans-serif;
+        font-style: italic;
+    }
+    
+    .igAndPhone{
+        display: flex;
+        align-items: left;
+        justify-content: space-between;
+        width: 122%;
+    }
+    
+    .igAndPhone input{
+        width: 50%;
+    }
+    
+    .dateAndVenue{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 122%;
+    }
+    
+    .davInput{
+        margin-right: .5rem;
+    }
+    
+    .davInputAlt{
+        margin-left: .5rem;
+    }
+    
+    
+    .bookForm  button{
+        width: 122%;
+        padding: .8rem 0;
+        border: 0;
+        background: var(--gradient);
+        color: var(--abBlack);
+        border-radius: .2rem;
+        font-size: 3.3vw;
+        font-weight: 600;
+    }
+    
 }
