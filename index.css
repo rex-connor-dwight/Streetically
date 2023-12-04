@@ -14,19 +14,28 @@
 }
 @font-face {
     font-family: "AvenirRoman";
-    src: url(Fonts//AvenirLRoman.otf);
+    src: url(Fonts/AvenirLRoman.otf);
 }
 
 @font-face {
     font-family: "AvenirLight";
-    src: url(Fonts//AvenirLight.ttf);
+    src: url(Fonts/AvenirLight.ttf);
 }
 
 @font-face {
     font-family: "AvenirHeavy";
-    src: url(Fonts//Avenir\ Heavy.ttf);
+    src: url(Fonts/Avenir\ Heavy.ttf);
 }
 
+@font-face {
+    font-family: "ArconRegular";
+    src: url(Fonts/ArconRegular.otf);
+}
+
+@font-face {
+    font-family: "ArconRegularRounded";
+    src: url(Fonts/ArconRoundedRegular.otf);
+}
 
 :root{
     --abBlack: #040606;
@@ -73,6 +82,7 @@ header{
     color: var(--darkgreen);
     position: fixed;
     opacity: 70%;
+    z-index: 2;
 }
 
 
@@ -410,6 +420,154 @@ header ul :hover{
     font-size: 1.2vw;
     font-weight: 600;
 }
+
+
+.Gallery{
+    display: flex;
+    flex-direction: column;
+    padding: 7% 5%;
+}
+
+.galleryTop h2{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    color: var(--gold2);
+    margin-bottom: .4rem;
+}
+
+.galleryTop h1{
+    font-size: 3.3vw;
+    font-weight: 400;
+    font-family: "ArconRegularRounded";
+}
+
+.galleryTop p{
+    font-size: .9vw;
+    font-weight: 400;
+    font-family: "ArconRegularRounded";
+    margin-top: .4rem;
+}
+
+.gallerySlideCon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    overflow: scroll;
+}
+
+.gallerySlideBanner{
+    margin-right: .6vw;
+}
+
+.gallerySlideImg1, .gallerySlideImg2, .gallerySlideImg3, .gallerySlideImg4, .gallerySlideImg5 {
+    height: 22rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: .2rem;
+    width: 18rem;
+}
+
+.gallerySlideImg1{
+    background: url(images/light.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallerySlideImg2{
+    background: url(images/nature.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallerySlideImg3{
+    background: url(images/architecture.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallerySlideImg4{
+    background: url(images/civil.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallerySlideImg5{
+    background: url(images/culture.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.gallerySlideCon::-webkit-scrollbar{
+    display: none;
+}
+
+.gallerySlideImg1  img{
+    max-width: 6%;
+    height: auto;
+    margin-left: .4vw;
+}
+
+.gallerySlideImg2  img{
+    max-width: 6%;
+    height: auto;
+    margin-left: .4vw;
+}
+
+.gallerySlideImg3  img{
+    max-width: 6%;
+    height: auto;
+    margin-left: .4vw;
+}
+
+.gallerySlideImg4  img{
+    max-width: 6%;
+    height: auto;
+    margin-left: .4vw;
+}
+
+.gallerySlideImg5  img{
+    max-width: 6%;
+    height: auto;
+    margin-left: .4vw;
+}
+
+.gallerySlideCon button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: var(--AD);
+    width: 35%;
+    margin-bottom: 3vh;
+    padding: 1.2vh 0;
+    border-radius: 5rem;
+    font-size: .5vw;
+    font-weight: 400;
+    font-family: "ArconRegularRounded";
+}
+
+.gallerySlideCon h3{
+    font-size: 1vw;
+    font-weight: 800;
+    font-family: "AvenirHeavy";
+    margin-top: 1rem;
+}
+
+
+.gallerySlideCon h4{
+    font-size: .8vw;
+    font-weight: 400;
+    font-family: "ArconRegularRounded";
+}
+
+
+
+
+
 
 
 
@@ -814,5 +972,153 @@ header ul :hover{
         font-size: 3.3vw;
         font-weight: 600;
     }
+
+
+
+
+
+
+    .Gallery{
+        display: flex;
+        flex-direction: column;
+        padding: 7% 5%;
+    }
+
+    .galleryTop h2{
+        font-size: 4vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        color: var(--gold2);
+        margin-bottom: .4rem;
+    }
+
+    .galleryTop h1{
+        font-size: 8vw;
+        font-weight: 400;
+        font-family: "ArconRegularRounded";
+    }
+
+    .galleryTop p{
+        font-size: 2.9vw;
+        font-weight: 400;
+        font-family: "ArconRegularRounded";
+        margin-top: .4rem;
+    }
+
+    .gallerySlideCon{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 2rem;
+        overflow: scroll;
+    }
+
+    .gallerySlideBanner{
+        margin-right: 1.5vw;
+    }
+
+    .gallerySlideImg1, .gallerySlideImg2, .gallerySlideImg3,   .gallerySlideImg4, .gallerySlideImg5 {
+        height: 20rem;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        border-radius: .2rem;
+        width: 16rem;
+    }
+
+    .gallerySlideImg1{
+        background: url(images/light.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .gallerySlideImg2{
+        background: url(images/nature.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .gallerySlideImg3{
+        background: url(images/architecture.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .gallerySlideImg4{
+        background: url(images/civil.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .gallerySlideImg5{
+        background: url(images/culture.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .gallerySlideCon::-webkit-scrollbar{
+        display: none;
+    }
+
+    .gallerySlideImg1  img{
+        max-width: 6%;
+        height: auto;
+        margin-left: .4vw;
+    }
+
+    .gallerySlideImg2  img{
+        max-width: 6%;
+        height: auto;
+        margin-left: .4vw;
+    }
+
+    .gallerySlideImg3  img{
+        max-width: 6%;
+        height: auto;
+        margin-left: .4vw;
+    }
+
+    .gallerySlideImg4  img{
+        max-width: 6%;
+        height: auto;
+        margin-left: .4vw;
+    }
+
+    .gallerySlideImg5  img{
+        max-width: 6%;
+        height: auto;
+        margin-left: .4vw;
+    }
+
+    .gallerySlideCon button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background: var(--AD);
+        width: 35%;
+        margin-bottom: 3vh;
+        padding: 1vh 0;
+        border-radius: 5rem;
+        font-size: 2vw;
+        font-weight: 400;
+        font-family: "ArconRegularRounded";
+    }
+
+    .gallerySlideCon h3{
+        font-size: 3.3vw;
+        font-weight: 800;
+        font-family: "AvenirHeavy";
+        margin-top: 1rem;
+    }
+
+
+    .gallerySlideCon h4{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "ArconRegularRounded";
+    }
+
     
 }
