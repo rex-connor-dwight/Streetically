@@ -18,7 +18,7 @@
             <a href="#Gallery"><li>Gallery</li></a>
         </ul>
 
-        <button id="navBar"> <img src="images/menu.png" alt="Nav"></button>
+        <button onclick="showPopup()" id="navBar"> <img src="images/menu.png" alt="Nav"></button>
     </header>
 
     <!-- Home -->
@@ -30,7 +30,7 @@
 
         <div class="homeCTA">
             <div class="book">
-                <h3>Book Now!</h3>
+                <a href="#Book"><h3>Book Now!</h3></a>
             </div>
             <div class="homeVideo">
                 <img src="images/play-button.png" alt=""> 
@@ -172,11 +172,55 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+    <!--Mobile navigation menu-->
+
+    <section id="mobileNav" class="mobileNav">
+
+        <header>
+            <a href="#"><img src="images/headerDots.png" alt="dots"></a>
+            <ul>
+                <a href="#"><li>Home</li></a>
+                <a href="#About"><li>About</li></a>
+                <a href="#Book"><li>Book</li></a>
+                <a href="#Gallery"><li>Gallery</li></a>
+            </ul>
+    
+            <button onclick="closePopup()" id="navBar"> <img src="images/cancel.png" alt="Nav"></button>
+        </header>
+
+        <ul>
+            <a onclick="closePopup()" href="#"><li>Home</li></a>
+            <a onclick="closePopup()" href="#About"><li>About</li></a>
+            <a onclick="closePopup()" href="#Book"><li>Book</li></a>
+            <a onclick="closePopup()" href="#Gallery"><li>Gallery</li></a>
+        </ul>
+
+        <div class="signature">
+            <h1>Dear Esteemed Client</h1>
+            <p id="typing-text">
+                
+            </p>
+
+            <h3>Streetically</h3>
+        </div>
+
+    </section>
     
 
 
 
 
     <!--<script src="index.js"></script>-->
+    <script src="navigation.js"></script>
 </body>
 </html>
