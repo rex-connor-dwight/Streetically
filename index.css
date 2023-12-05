@@ -125,7 +125,7 @@ header ul :hover{
 }
 
 .Home{
-    background: url(images/bg2.png) no-repeat; 
+    background: url(images/bg1.png) no-repeat; 
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -394,11 +394,28 @@ header ul :hover{
     font-style: italic;
 }
 
+.Book input[type="date"]::placeholder {
+    font-size: .7vw;
+    font-weight: 400;
+    font-family: 'Arcon', sans-serif;
+    font-style: italic;
+}
+
+.Book input[type="date"] {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 2vh 2vw;
+    border: var(--gray4) .085rem solid;
+    background: var(--bookForm);
+    border-radius: .2rem;
+    color: var(--gray3);
+  }
+
 .igAndPhone{
     display: flex;
     align-items: left;
     justify-content: space-between;
-    width: 114%;
+    width: 116%;
 }
 
 .igAndPhone input{
@@ -409,7 +426,7 @@ header ul :hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 114%;
+    width: 116%;
 }
 
 .davInput{
@@ -577,6 +594,80 @@ header ul :hover{
 
 
 
+.whyChoose{
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 5% 0vh 5%;
+    background: var(--darkgreen);
+    color: var(--AD);
+}
+
+.whyChooseTop{
+    margin-top: 2rem;
+}
+
+.whyChooseTop h1{
+    font-size: 6vw;
+    font-weight: 300;
+    font-family: "AvenirLight";
+}
+
+.whyChooseTop h1 span{
+    font-weight: 800;
+    font-family: "AvenirBlack";
+    text-transform: uppercase;
+}
+
+.whyChooseTop p{
+    width: 50%;
+    font-size: 1.2vw;
+    font-family: "ArconRegular";
+    font-weight: 400;
+}
+
+.whyChooseButtom{
+    margin-top: 4rem;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    width: 100%;
+}
+
+.whyChooseButtomText{
+    width: 50%;
+}
+
+.whyChooseButtomText h2{
+    font-size: 1.3vw;
+    margin-bottom: 5vw ;
+    font-weight: 400;
+    font-family: "ArconRegular";
+    padding-left: 3rem;
+}
+
+.whyChooseButtomTextActive{
+    font-size: 1.3vw;
+    font-weight: 400;
+    font-family: "ArconRegular";
+    background: var(--gray4);
+    width: 47%;
+    padding: 1.3rem 0;
+    border-radius: .2rem;
+}
+
+
+.whyChooseButtomVideo{
+    width: 50%;
+}
+
+.whyChooseButtomVideo video{
+    max-width: 100%;
+    height: auto;
+    border-radius: .2rem;
+}
+
+
+
 
 
 
@@ -646,8 +737,10 @@ header ul :hover{
     }
     
     .mobileNav ul{
+        justify-content: center;
         align-items: center;
-       margin-top: 7rem;
+        margin-top: 7rem;
+        padding: 0;
     }
     
     .mobileNav li{
@@ -735,7 +828,7 @@ header ul :hover{
         height: 100vh;
         padding: 0 5%;
         color: var(--AD);
-        background: url(images/mbg1.png) no-repeat; 
+        background: url(images/mbg5.png) no-repeat; 
         background-position: center;
         background-size: cover;
         transition: background-image 1s ease;
@@ -1194,6 +1287,83 @@ header ul :hover{
         font-size: 2.2vw;
         font-weight: 400;
         font-family: "ArconRegularRounded";
+    }
+
+
+
+    .whyChoose{
+        display: flex;
+        flex-direction: column;
+        padding: 2vh 5% 0vh 5%;
+        background: var(--darkgreen);
+        color: var(--AD);
+    }
+
+    .whyChooseTop{
+        margin-top: 2rem;
+    }
+
+    .whyChooseTop h1{
+        font-size: 10vw;
+        font-weight: 300;
+        font-family: "AvenirLight";
+    }
+
+    .whyChooseTop h1 span{
+        font-size: 10vw;
+        font-weight: 800;
+        font-family: "AvenirBlack";
+        text-transform: uppercase;
+    }
+
+    .whyChooseTop p{
+        width: 95%;
+        font-size: 2.4vw;
+        font-family: "ArconRegular";
+        font-weight: 400;
+    }
+
+    .whyChooseButtom{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: top;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .whyChooseButtomText{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .whyChooseButtomText h2{
+        font-size: 3.5vw;
+        margin-bottom: 9vw ;
+        font-weight: 400;
+        font-family: "ArconRegular";
+        padding-left: 3rem;
+    }
+
+    .whyChooseButtomTextActive{
+        font-size: 1.3vw;
+        font-weight: 400;
+        font-family: "ArconRegular";
+        background: var(--gray4);
+        width: 86%;
+        padding: 1.3rem 0;
+        border-radius: .2rem;
+    }
+
+
+    .whyChooseButtomVideo{
+        width: 100%;
+    }
+
+    .whyChooseButtomVideo video{
+        max-width: 100%;
+        height: auto;
+        border-radius: .2rem;
     }
 
     

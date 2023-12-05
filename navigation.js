@@ -40,3 +40,25 @@ function typeText() {
 
 // Call the function to start typing effect
 typeText();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const weddingDateInput = document.getElementById('weddingDate');
+
+  // Prevent the default behavior of the date input
+  weddingDateInput.addEventListener('focus', function () {
+    weddingDateInput.type = 'date';
+  });
+
+  // Revert to text input when losing focus
+  weddingDateInput.addEventListener('blur', function () {
+    if (!weddingDateInput.value) {
+      weddingDateInput.type = 'text';
+    }
+  });
+
+  weddingDateInput.addEventListener();
+});
+
+
+
