@@ -120,20 +120,40 @@
 
 
         <div class="bookForm">
-            <form action="" method="post">
-                <input type="text" placeholder="Full Name:" required>
-                <input type="email" placeholder="Email:" required>
-                <div class="igAndPhone">
-                    <input class="davInput"  type="text" placeholder="IG Handle:" required>
-                    <input class="davInputAlt"  type="tel" placeholder="Phone NO:" required>
-                </div>
-                <div class="dateAndVenue">
-                    <input class="davInput" type="date" id="weddingDate" name="Wedding date:" placeholder="Wedding date:" required>
-                    <input class="davInputAlt"  type="text" placeholder="Wedding venue:" required>
-                </div>
-                    <input type="text" placeholder="How did you find us?" required>
-                    <input type="textarea" placeholder="Why Streetically?">
+            <label for="bookingType">Who is booking:</label>
+            <select id="bookingType" name="bookingType">
+                <option value="bride">Bride</option>
+                <option value="groom">Groom</option>
+                <option value="planner">Planner</option>
+                <option value="other">Other</option>
+            </select>
 
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="full Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <label for="Instagram Handle">Instagram Handle:</label>
+            <input type="text" id="Instagram Handle" name="Instagram Handle" placeholder="@">
+
+            <label for="Phone No">Phone No:</label>
+            <input type="tel" id="PhoneNo" name="Phone No" placeholder="Phone No">
+
+            <label for="Wedding Date">Wedding Date:</label>
+            <input type="date" id="Phone No" name="Wedding Date" >
+
+            <label for="How many days is your wedding"> How many days is your wedding?</label>
+            <input type="number" id="weddingDuration" name="weddingDuration" placeholder="2">
+
+            <label for="planner ">Do you have a planner?:</label>
+            <input type="text" id="planner " name="planner" placeholder="">
+
+            <label for="locations">Wedding and Reception Locations:</label>
+            <input type="text" id="locations" name="locations " placeholder="">
+
+            <label for="weddingAbout">Tell us about your wedding:</label>
+            <input type="text" id="weddingAbout" name="weddingAbout Handle" placeholder="">
 
                 <button>Book</button>
             </form>
