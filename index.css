@@ -1201,7 +1201,7 @@ header ul :hover{
     
     
     .bookForm{
-        width: 82%;
+        width: 87.5%;
         margin-top: 4vh;
         display: flex;
         flex-direction: column;
@@ -1249,8 +1249,8 @@ header ul :hover{
         appearance: none;
     }
 
-    .bookForm[type="date"]{
-        width: 100%;
+   #weddingDate{
+        width: 93.5%;
     }
     
     
