@@ -89,6 +89,7 @@ header{
     position: fixed;
     opacity: 70%;
     z-index: 2;
+
 }
 
 
@@ -186,7 +187,86 @@ header ul :hover{
 
 
 
+.freezing{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    color: var(--darkgreen);
+    background: #f4fdfc;
+    padding: 10vh ;
+}
+
+.freezing button{
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+.freezing img{
+    max-width: 2.5vw;
+    height: auto;
+    margin-right: 1vw;
+}
+
+.freezingImgOne{
+    width: 50%;
+    background: url(images/freezOne.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: .2rem;
+}
+
+
+.freezingImgTwo{
+    width: 50%;
+    display: none;
+    background: url(images/freezTwo.png) no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: inherit;
+    align-items: center;
+    justify-content: right;
+    border-radius: .2rem;
+}
+
+
+
+.freezingText{
+    width: 50%;
+    padding: 0 4vw;
+}
+
+.freezingText h1{
+    font-size: 12vw;
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+}
+
+.freezingText  h3{
+    font-size: 3vw;
+    margin-top: -5vw;
+    font-weight: 300;
+    font-family: "ArconRegular";
+}
+
+.freezingText p{
+    margin-top: 4vh;
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: "ArconRegular";
+}
+
+
+
 .About{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
     padding: 5rem 5%;
     color: var(--gray3);
     border-radius: .4rem;
@@ -198,6 +278,7 @@ header ul :hover{
     justify-content: center;
     background: var(--abBlack);
     border-radius: .4rem;
+    height: 70vh;
 }
 
 .aboutCard{
@@ -286,7 +367,7 @@ header ul :hover{
 
 
 .Book{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background: url(images/bookBg.png) no-repeat;
@@ -409,7 +490,14 @@ header ul :hover{
     background: var(--bookForm);
     border-radius: .2rem;
     color: var(--gray3);
-  }
+}
+
+.Book input[type="date"]::-webkit-inner-spin-button,
+.Book input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 .igAndPhone{
     display: flex;
@@ -451,7 +539,7 @@ header ul :hover{
 
 
 .Gallery{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 7% 5%;
 }
@@ -893,8 +981,89 @@ header ul :hover{
     }
 
 
+
+
+
+    .freezing{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 95vh;
+        color: var(--darkgreen);
+        background: #f4fdfc;
+        padding: 2vh 0 10vh 0;
+    }
+    
+    .freezing button{
+        border: 0;
+        background: 0;
+        cursor: pointer;
+    }
+    
+    .freezing img{
+        max-width: 5.5vw;
+        height: auto;
+        margin-right: 1vw;
+    }
+    
+    .freezingImgOne{
+        width: 90%;
+        background: url(images/freezOne.png) no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        border-radius: .2rem;
+    }
+    
+    
+    .freezingImgTwo{
+        width: 90%;
+        display: none;
+        background: url(images/freezTwo.png) no-repeat;
+        background-size: cover;
+        background-position: top;
+        height: inherit;
+        align-items: center;
+        justify-content: right;
+        border-radius: .2rem;
+    }
+    
+    
+    
+    .freezingText{
+        width: 90%;
+        padding: 0 0vw;
+    }
+    
+    .freezingText h1{
+        font-size: 18vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+    }
+    
+    .freezingText  h3{
+        font-size: 6vw;
+        margin-top: -6vw;
+        font-weight: 300;
+        font-family: "ArconRegular";
+    }
+    
+    .freezingText p{
+        margin: 2vh 0;
+        font-size: 2.3vw;
+        font-weight: 400;
+        font-family: "ArconRegular";
+    }
+    
+    
+
+
     .About{
-        padding: 1.5rem 5%;
+        height: 100vh;
+        padding: 5.5rem 5%;
         color: var(--gray3);
         border-radius: .4rem;
     }
@@ -906,6 +1075,7 @@ header ul :hover{
         justify-content: center;
         background: var(--abblackSub);
         border-radius: .4rem;
+        height: inherit;
     }
 
     .aboutCard{
@@ -994,7 +1164,7 @@ header ul :hover{
     }
 
     .Book{
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1007,6 +1177,7 @@ header ul :hover{
     
     .bookText{
         width: 100%;
+        margin-top: 7vh;
     }
     
     .bookText h2{
@@ -1121,7 +1292,9 @@ header ul :hover{
         justify-content: space-between;
         width: 122%;
     }
-    
+   
+
+
     .davInput{
         margin-right: .5rem;
     }
@@ -1148,9 +1321,11 @@ header ul :hover{
 
 
     .Gallery{
-        display: flex;
+        display: none;
+        justify-content: center;
         flex-direction: column;
-        padding: 7% 5%;
+        padding: 0 5%;
+        height: 100vh;
     }
 
     .galleryTop h2{

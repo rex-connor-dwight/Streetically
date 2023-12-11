@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="site-header">
         <a href="#"><img src="images/headerDots.png" alt="dots"></a>
         <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#About"><li>About</li></a>
-            <a href="#Book"><li>Book</li></a>
-            <a href="#Gallery"><li>Gallery</li></a>
+            <a onclick="openHome()" href="#"><li>Home</li></a>
+            <a onclick="openAbout()" href="#About"><li>About</li></a>
+            <a onclick="openBook()" href="#Book"><li>Book</li></a>
+            <a onclick="openGallery()" href="#Gallery"><li>Gallery</li></a>
         </ul>
 
         <button onclick="showPopup()" id="navBar"> <img src="images/menu.png" alt="Nav"></button>
@@ -30,7 +30,7 @@
 
         <div class="homeCTA">
             <div class="book">
-                <a href="#Book"><h3>Book Now!</h3></a>
+                <a onclick="openBook()" href="#Book"><h3>Book Now!</h3></a>
             </div>
             <div class="homeVideo">
                 <img src="images/play-button.png" alt=""> 
@@ -38,6 +38,27 @@
             </div>
         </div>
        </div>
+    </section>
+
+
+
+    <section id="freezing" class="freezing">
+        <div id="freezingImgOne" class="freezingImgOne">
+            <button onclick="getFreezingImgTwo()"><img src="images/bnt.png" alt=""></button>
+        </div>
+
+        <div id="freezingImgTwo" class="freezingImgTwo">
+            <button onclick="getFreezingImgOne()"><img src="images/bnt.png" alt=""></button>
+        </div>
+
+        <div class="freezingText">
+            <h1>Freezing</h1>
+            <h3>Timeless Moments</h3>
+            <p>
+                With a keen eye for detail and a passion for preserving emotions, we craft images that transcend time. From the joyous laughter to the tender glances, let us be your visual storytellers, ensuring your special day is eternally etched in the beauty of frozen moments. Cherish the memories, relive the magic – because every frame tells a love story.
+            </p>
+
+        </div>
     </section>
 
             <!-- About -->
@@ -159,7 +180,7 @@
                 <div class="gallerySlideImg4">
                     <button>Discover <img src="images/right.png" alt=""></button>
                 </div>
-                <h3>Modern Civil Inspo</h3>
+                <h3>White Weddings</h3>
                 <h4>Bringing out the beauty of morden weddings</h4>
             </div>
 
@@ -199,10 +220,10 @@
         </header>
 
         <ul>
-            <a onclick="closePopup()" href="#"><li>Home</li></a>
-            <a onclick="closePopup()" href="#About"><li>About</li></a>
-            <a onclick="closePopup()" href="#Book"><li>Book</li></a>
-            <a onclick="closePopup()" href="#Gallery"><li>Gallery</li></a>
+            <a onclick="mobileHomeView()" href="#"><li>Home</li></a>
+            <a onclick="mobileAboutView()" href="#About"><li>About</li></a>
+            <a onclick="mobileBookView()" href="#Book"><li>Book</li></a>
+            <a onclick="mobileGalleryView()" href="#Gallery"><li>Gallery</li></a>
         </ul>
 
         <div class="signature">
@@ -236,7 +257,7 @@
             </div>
 
             <div class="whyChooseButtomVideo">
-                <video  src="videos/Yoga meditate.mp4" width="640" height="360" controls poster="images/videpTumbnail.png"> </video></video>
+                <video  src="videos/Chidubem + Kelechi_1.mp4" width="640" height="360" controls poster="images/videpTumbnail.png"> </video></video>
             </div>
         </div>
     </section>

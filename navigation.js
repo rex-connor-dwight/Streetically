@@ -61,4 +61,109 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos || currentScrollPos === 0) {
+    document.getElementById("site-header").style.top = "0";
+  } else {
+    document.getElementById("site-header").style.top = "-60px"; // Adjust this value based on your header height
+  }
+
+  prevScrollPos = currentScrollPos;
+};
+
+
+const freezingImgOne = document.getElementById('freezingImgOne');
+const freezingImgTwo = document.getElementById('freezingImgTwo');
+
+
+
+function getFreezingImgOne(){
+  freezingImgOne.style.display = 'flex';
+  freezingImgTwo.style.display = 'none';
+}
+
+
+function getFreezingImgTwo(){
+  freezingImgOne.style.display = 'none';
+  freezingImgTwo.style.display = 'flex';
+}
+
+
+
+
+
+const Home = document.getElementById('Home');
+const About = document.getElementById('About');
+const Book = document.getElementById('Book');
+const Gallery = document.getElementById('Gallery');
+const Video = document.getElementById('Video');
+const freezing = document.getElementById('freezing');
+
+
+
+function openHome(){
+  About.style.display = "none";
+  Home.style.display = "flex";
+  Book.style.display = "none";
+  Gallery.style.display = "none";
+  Video.style.display = "flex";
+  freezing.style.display = "flex";
+}
+
+function openAbout(){
+  About.style.display = "flex";
+  freezing.style.display = "none";
+  Home.style.display = "none";
+  Book.style.display = "none";
+  Gallery.style.display = "none";
+  Video.style.display = "none";
+}
+
+function openBook(){
+  About.style.display = "none";
+  Home.style.display = "none";
+  Book.style.display = "flex";
+  Gallery.style.display = "none";
+  Video.style.display = "none";
+  freezing.style.display = "none";
+}
+
+function openGallery(){
+  About.style.display = "none";
+  Home.style.display = "none";
+  Book.style.display = "none";
+  Gallery.style.display = "flex";
+  Video.style.display = "none";
+  freezing.style.display = "none";
+}
+
+//for mobile view nav
+
+function mobileHomeView(){
+  closePopup(),
+  openHome()
+}
+
+function mobileAboutView(){
+  closePopup(),
+  openAbout()
+}
+
+function mobileBookView(){
+  closePopup(),
+  openBook()
+}
+
+function mobileGalleryView(){
+  closePopup(),
+  openGallery()
+}
+
+
+
+
 
