@@ -1137,7 +1137,7 @@ header ul :hover{
         justify-content: center;
         background: var(--BookBG);
         color: var(--gray3);
-        padding: 19vh 6% 6% 6%;
+        padding: 12vh 6% 6% 6%;
     }
     
     .bookText{
@@ -1248,6 +1248,10 @@ header ul :hover{
         -moz-appearance: none;
         appearance: none;
     }
+
+    .bookForm[type="date"]{
+        width: 100%;
+    }
     
     
     .bookForm  button{
@@ -1256,7 +1260,7 @@ header ul :hover{
         background: var(--gradient);
         color: var(--abBlack);
         border-radius: .2rem;
-        font-size: 1.2vw;
+        font-size: 2.9vw;
         font-weight: 600;
         margin-top: 2vh;
         cursor: pointer;
