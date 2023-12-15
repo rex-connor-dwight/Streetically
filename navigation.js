@@ -102,6 +102,7 @@ const Book = document.getElementById('Book');
 const Gallery = document.getElementById('Gallery');
 const Video = document.getElementById('Video');
 const freezing = document.getElementById('freezing');
+const storyTeller = document.getElementById('storyTeller');
 
 
 
@@ -112,6 +113,7 @@ function openHome(){
   Gallery.style.display = "none";
   Video.style.display = "flex";
   freezing.style.display = "flex";
+  storyTeller.style.display = "flex";
 }
 
 function openAbout(){
@@ -121,6 +123,7 @@ function openAbout(){
   Book.style.display = "none";
   Gallery.style.display = "none";
   Video.style.display = "none";
+  storyTeller.style.display = "none";
 }
 
 function openBook(){
@@ -130,6 +133,7 @@ function openBook(){
   Gallery.style.display = "none";
   Video.style.display = "none";
   freezing.style.display = "none";
+  storyTeller.style.display = "none";
 }
 
 function openGallery(){
@@ -139,6 +143,7 @@ function openGallery(){
   Gallery.style.display = "flex";
   Video.style.display = "none";
   freezing.style.display = "none";
+  storyTeller.style.display = "none";
 }
 
 //for mobile view nav

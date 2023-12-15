@@ -718,6 +718,107 @@ header ul :hover{
 
 
 
+.storyTeller{
+    display: flex;
+    align-items: center;
+    height: 670px;
+    padding: 0 3%;
+    background: url(images/storyTellerBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.wildWeddingStories{
+    width: 30%;
+}
+
+.wwwLine{
+    background: var(--BookBG);
+    height: 1.5px;
+    width: 10vw;
+    margin-bottom: 1vh;
+}
+
+.wwwLine h1{
+    display: none;
+}
+
+.wildWeddingStories h2{
+    font-weight: 400;
+    font-size: 2.4vw;
+    font-family: "AvenirRoman";
+}
+
+.wildWeddingStories h2 span{
+    font-family: "AvenirHeavy";
+    font-weight: 600;
+}
+
+.wildWeddingStories p{
+    font-size: .9vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-top: 1.3vh;
+    padding-right: 2vw;
+}
+
+
+
+.storyTellerImage{
+    width: 27%;
+    background: url(images/storryCard.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    margin: 0 2vw;
+}
+
+.visualStoryteller{
+    width: 43%;
+}
+
+.visualStoryteller h5{
+    font-size: .7vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 1.5vh;
+}
+
+.visualStoryteller  h1{
+    font-size: 6vw;
+    font-weight: 300;
+    font-family: "AvenirRoman";
+    line-height: 6.2vw;
+}
+
+.visualStoryteller  h1 span{
+    font-weight: 500;
+    font-family: "AvenirHeavy";
+}
+
+.visualStoryteller  p{
+    font-size: .9vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-top: 4vh;
+}
+
+
+.visualStoryteller button{
+    padding: .7rem;
+    border: 0;
+    background: var(--BookBG);
+    color: var(--AD);
+    font-size: 1vw;
+    font-weight: 500;
+    width: 15vw;
+    margin-top: 3vh;
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -1493,6 +1594,111 @@ header ul :hover{
         height: auto;
         border-radius: .2rem;
     }
+
+
+
+    .storyTeller{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 135vh;
+        padding: 4vh 5%;
+        background: url(images/storyTellerBg.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    
+    .wildWeddingStories{
+        width: 100%;
+        margin-top: 6vh;
+    }
+    
+    .wwwLine{
+        background: var(--BookBG);
+        height: 1.5px;
+        width: 45vw;
+        margin-bottom: 1vh;
+    }
+    
+    .wwwLine h1{
+        display: none;
+    }
+    
+    .wildWeddingStories h2{
+        font-weight: 400;
+        font-size: 6vw;
+        font-family: "AvenirRoman";
+    }
+    
+    .wildWeddingStories h2 span{
+        font-family: "AvenirHeavy";
+        font-weight: 600;
+    }
+    
+    .wildWeddingStories p{
+        font-size: 2.9vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin: 1.3vh 0;
+        padding-right: 2vw;
+    }
+    
+    
+    
+    .storyTellerImage{
+        width: 111%;
+        background: url(images/IMG_7373.JPG) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        height: inherit;
+        margin: 3.5vh 0vw;
+    }
+    
+    .visualStoryteller{
+        width: 100%;
+        margin-top: 3vh;
+    }
+    
+    .visualStoryteller h5{
+        font-size: 2.4vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 1.5vh;
+    }
+    
+    .visualStoryteller  h1{
+        font-size: 16vw;
+        font-weight: 300;
+        font-family: "AvenirRoman";
+        line-height: 16vw;
+    }
+    
+    .visualStoryteller  h1 span{
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+    }
+    
+    .visualStoryteller  p{
+        font-size: 2.9vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-top: 3vh;
+    }
+    
+    
+    .visualStoryteller button{
+        padding: 1rem;
+        border: 0;
+        background: var(--BookBG);
+        color: var(--AD);
+        font-size: 2.6vw;
+        font-weight: 500;
+        width: 35vw;
+        margin-top: 3vh;
+        cursor: pointer;
+    }
+    
 
     
 }
