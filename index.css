@@ -58,6 +58,7 @@
     --gray3: #878b8b;
     --gray4: #555b5e;
     --bookForm: #132020;
+    --success: #20bf55;
     --gradient: linear-gradient(90deg, var(--gold1), var(--gold2));
 }
 
@@ -816,6 +817,55 @@ header ul :hover{
     margin-top: 3vh;
     cursor: pointer;
 }
+
+
+
+.submitPop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--BookBG);
+    color: var(--bookInput);
+    padding: 0 27vw;
+}
+
+.submitPop img{
+    max-width: 10vw;
+    height: auto;
+    margin-bottom: 4vh;
+}
+
+.submitPop h2{
+    font-size: 2vw;
+    font-weight: 600;
+    font-family: "AvenirHeavy";
+    color: var(--success);
+    margin-bottom: 4vh;
+}
+
+.submitPop p{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: "AvenirRoman";
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.submitPop button{
+    padding: .7rem;
+    border: 0;
+    background: var(--bookInput);
+    color: var(--BookBG);
+    font-size: 1.6vw;
+    font-weight: 500;
+    width: 20vw;
+    margin-top: 4vh;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+
 
 
 
@@ -1698,6 +1748,56 @@ header ul :hover{
         margin-top: 3vh;
         cursor: pointer;
     }
+
+
+    .submitPop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: var(--BookBG);
+        color: var(--bookInput);
+        padding: 0 10vw;
+    }
+    
+    .submitPop img{
+        max-width: 15vw;
+        height: auto;
+        margin-bottom: 4vh;
+    }
+    
+    .submitPop h2{
+        font-size: 5vw;
+        font-weight: 600;
+        font-family: "AvenirHeavy";
+        color: var(--success);
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+    
+    .submitPop p{
+        font-size: 2.2vw;
+        font-weight: 400;
+        font-family: "AvenirRoman";
+        margin-bottom: 1vh;
+        text-align: center;
+    }
+    
+    .submitPop button{
+        padding: .7rem;
+        border: 0;
+        background: var(--bookInput);
+        color: var(--BookBG);
+        font-size: 2.6vw;
+        font-weight: 500;
+        font-family: "AvenirHeavy";
+        width: 40vw;
+        margin-top: 4vh;
+        cursor: pointer;
+        border-radius: .2rem;
+    }
+    
     
 
     
